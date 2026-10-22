@@ -68,7 +68,7 @@ export const PORTFOLIO_DATA = {
     copyrightYear: "2026",
     socials: {
       github: "https://github.com/shreya-2111",
-      linkedin: "https://linkedin.com/in/shreya-raval", // Configurable profile URL
+      linkedin: "https://www.linkedin.com/in/shreya-raval-a5a4b1326/",
       email: "mailto:shreyaraval2111@gmail.com?subject=Collaboration%20Inquiry%20%E2%80%94%20Portfolio",
     },
   },
