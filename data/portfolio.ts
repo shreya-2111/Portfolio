@@ -64,7 +64,7 @@ export const PORTFOLIO_DATA = {
     email: "shreyaraval2111@gmail.com",
     avatar: "/images/shreya-avatar.jpg",
     photo: "/images/shreya-profile.jpg",
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "/Shreya_Raval_Resume.pdf",
     copyrightYear: "2026",
     socials: {
       github: "https://github.com/shreya-2111",
@@ -99,7 +99,7 @@ export const PORTFOLIO_DATA = {
     },
     secondaryCta: {
       label: "DOWNLOAD RESUME",
-      href: "/resume.pdf",
+      href: "/Shreya_Raval_Resume.pdf",
     },
     tickerItems: [
       "REACT.JS",

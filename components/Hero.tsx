@@ -63,6 +63,7 @@ export default function Hero() {
                 href={PORTFOLIO_DATA.hero.secondaryCta.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                download="Shreya_Raval_Resume.pdf"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white border border-border text-text-main font-mono text-xs font-semibold tracking-wider uppercase rounded hover:bg-surface-secondary hover:border-primary/50 transition-all duration-200 shadow-sm"
                 id="hero-resume-btn"
               >
