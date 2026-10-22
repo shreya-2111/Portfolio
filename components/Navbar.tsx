@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
@@ -95,8 +94,8 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right Action: Resume Button & Avatar */}
-        <div className="hidden lg:flex items-center gap-3">
+        {/* Right Action: Resume Button */}
+        <div className="hidden lg:flex items-center">
           <a
             href={PORTFOLIO_DATA.personal.resumeUrl}
             target="_blank"
@@ -107,18 +106,6 @@ export default function Navbar() {
             <span>RESUME</span>
             <ArrowUpRight className="w-3.5 h-3.5 text-primary" />
           </a>
-
-          {/* Profile mini avatar */}
-          <div className="w-9 h-9 rounded-full overflow-hidden border border-border bg-primary-light flex-shrink-0">
-            <Image
-              src={PORTFOLIO_DATA.personal.avatar}
-              alt={PORTFOLIO_DATA.personal.name}
-              width={36}
-              height={36}
-              className="w-full h-full object-cover"
-              priority
-            />
-          </div>
         </div>
 
         {/* Mobile / Tablet Hamburger Button */}
@@ -150,24 +137,13 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-b border-border bg-[#F8F6F1] px-5 py-6 space-y-4 shadow-lg animate-in slide-in-from-top duration-200">
-          <div className="flex items-center gap-3 pb-3 border-b border-border/50">
-            <div className="w-10 h-10 rounded-full overflow-hidden border border-border bg-primary-light">
-              <Image
-                src={PORTFOLIO_DATA.personal.avatar}
-                alt={PORTFOLIO_DATA.personal.name}
-                width={40}
-                height={40}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <p className="font-heading font-bold text-sm text-text-main">
-                {PORTFOLIO_DATA.personal.name}
-              </p>
-              <p className="font-mono text-xs text-primary">
-                {PORTFOLIO_DATA.personal.role}
-              </p>
-            </div>
+          <div className="pb-3 border-b border-border/50">
+            <p className="font-heading font-bold text-sm text-text-main">
+              {PORTFOLIO_DATA.personal.name}
+            </p>
+            <p className="font-mono text-xs text-primary">
+              {PORTFOLIO_DATA.personal.role}
+            </p>
           </div>
 
           <div className="flex flex-col space-y-3 pt-2">
