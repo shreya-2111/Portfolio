@@ -24,9 +24,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shreya Raval — Full-Stack Developer & Software Engineer",
-  description:
-    "Full-Stack Developer focused on building thoughtful web applications, modern interfaces, and real-world digital products that bridge architectural rigor with editorial elegance.",
+  title: "Shreya Raval | Full-Stack Developer",
+  description: "Portfolio of Shreya Raval, Full-Stack Developer.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   keywords: [
     "Shreya Raval",
     "Full-Stack Developer",
@@ -42,9 +50,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Shreya Raval" }],
   openGraph: {
-    title: "Shreya Raval — Full-Stack Developer",
-    description:
-      "Full-Stack Developer focused on building thoughtful web applications, modern interfaces, and real-world digital products.",
+    title: "Shreya Raval | Full-Stack Developer",
+    description: "Portfolio of Shreya Raval, Full-Stack Developer.",
     type: "website",
     locale: "en_US",
   },
